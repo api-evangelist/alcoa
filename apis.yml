@@ -19,6 +19,8 @@ description: >-
   responsible bauxite mining, and advancing aluminum recycling.
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/alcoa-domain-security.yml
   - type: Website
     url: https://www.alcoa.com
   - type: Portal
