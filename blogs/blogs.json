@@ -14,8 +14,15 @@
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://www.alcoa.com/global/en/what-we-do",
+      "feed_url": "https://www.alcoa.com/global/en/what-we-do",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-08-22T20:20:02Z",
-  "post_count": 14
+  "fetched": "2026-08-30T22:33:40Z",
+  "post_count": 16
 }
