@@ -1,0 +1,92 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  Alcoa ethics-and-compliance policy pages plus Aluminium Stewardship Initiative (ASI)
+  certification newsfeed and published audit reports, probed 2026-08-30.
+note: >-
+  Alcoa's published conformance is INDUSTRIAL, not technical. It certifies its mining, refining
+  and smelting operations against materials-sector sustainability and management-system
+  standards; it publishes no API and therefore conforms to no API or protocol standard.
+  Both halves are recorded here so the absence on the technical side is explicit rather than
+  merely missing. No domain_standard_conformance is asserted: that check reads a machine-readable
+  CONTRACT declaring a standard, and Alcoa publishes no contract.
+industry_standards:
+- id: asi-performance-standard
+  name: ASI Performance Standard (Aluminium Stewardship Initiative)
+  conforms: true
+  evidence: >-
+    ASI certified Alcoa against the ASI Performance Standard; Alcoa reports 18 ASI-certified
+    sites globally. Certification is published by ASI, not self-asserted.
+  source: https://aluminium-stewardship.org/aluminium-stewardship-initiative-certifies-alcoa-against-asi-performance-standard-expands-chain-of-custody-standard-certification-scope
+  http_status: 200
+- id: asi-chain-of-custody
+  name: ASI Chain of Custody Standard
+  conforms: true
+  evidence: ASI expanded Alcoa's Chain of Custody Standard certification scope.
+  source: https://aluminium-stewardship.org/aluminium-stewardship-initiative-certifies-alcoa-against-asi-performance-standard-expands-chain-of-custody-standard-certification-scope
+  http_status: 200
+- id: iso-14001
+  name: ISO 14001 Environmental Management Systems
+  conforms: true
+  evidence: >-
+    Alcoa facilities hold ISO 14001:2015 certificates; the EHS policy commits to certified
+    environmental management systems.
+  source: https://www.alcoa.com/global/en/who-we-are/ethics-compliance/ehs-vision-values-mission-and-policy
+  http_status: 200
+- id: iso-45001
+  name: ISO 45001 Occupational Health & Safety Management Systems
+  conforms: true
+  evidence: >-
+    Alcoa facilities hold ISO 45001 certificates; ASI Performance Standard Principle 11 audits
+    against ISO 45001 requirements.
+  source: https://www.alcoa.com/global/en/who-we-are/ethics-compliance/ehs-vision-values-mission-and-policy
+  http_status: 200
+- id: iso-9001
+  name: ISO 9001 Quality Management Systems
+  conforms: true
+  evidence: Alcoa Quality Policy commits to certified quality management systems across operations.
+  source: https://www.alcoa.com/global/en/who-we-are/ethics-compliance/quality-policy
+  http_status: 200
+api_standards:
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI/Swagger document found on any Alcoa host — see x-coverage in apis.yml.
+- id: asyncapi
+  conforms: false
+  evidence: No event or streaming surface published.
+- id: graphql
+  conforms: false
+  evidence: No /graphql surface found on www.alcoa.com or api.alcoa.com (both 404).
+- id: oauth2
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server 404 on every host; api.alcoa.com gates on an Azure APIM subscription key, not OAuth.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404 on every host.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: api.alcoa.com returns a bespoke {statusCode,message} envelope, not application/problem+json.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt 404 on alcoa.com and www.alcoa.com; soft-200 catch-all on news./investors.alcoa.com.
+- id: a2a-agent-card
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json miss on every host.
+compliance_program:
+  published: true
+  url: https://www.alcoa.com/global/en/who-we-are/ethics-compliance
+  http_status: 200
+  covers:
+  - Code of Conduct
+  - Anti-Corruption
+  - Human Rights Policy
+  - Indigenous Peoples Policy
+  - Supplier Standards
+  - Quality Policy
+  - EHS Vision, Values, Mission and Policy
+  - International Trade Compliance Policy
+  - Tax Policy
+  - Water Stewardship Policy
+  - Biodiversity Policy
+  - Climate Change Policy
+  integrity_line: https://www.alcoa.com/global/en/who-we-are/ethics-compliance/integrity-line

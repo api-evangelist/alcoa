@@ -1,0 +1,56 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  Registry sweep of npm, PyPI, RubyGems, crates.io, NuGet, Maven Central and Packagist for
+  first-party Alcoa Corporation client libraries, 2026-08-30.
+note: >-
+  HONEST ZERO. Alcoa Corporation publishes no client libraries on any public package registry.
+  Alcoa does not run a developer program and there is no API for an SDK to wrap. The two npm
+  hits for the string "alcoa" (is-alcoa, @makerchecker/obligations) are third-party packages
+  about the pharmaceutical ALCOA/ALCOA+ data-integrity principles, an unrelated acronym — they
+  are NOT Alcoa Corporation software and are deliberately not recorded as packages. No SDKs
+  pointer is emitted for this repo.
+package_count: 0
+packages: []
+registries_probed:
+- registry: npm
+  query: alcoa
+  endpoint: https://registry.npmjs.org/-/v1/search?text=alcoa
+  status: 200
+  first_party_hits: 0
+- registry: pypi
+  query: alcoa, alcoa-sdk, alcoa-api
+  endpoint: https://pypi.org/pypi/alcoa/json
+  status: 404
+  first_party_hits: 0
+- registry: rubygems
+  query: alcoa
+  endpoint: https://rubygems.org/api/v1/gems/alcoa.json
+  status: 404
+  first_party_hits: 0
+- registry: crates.io
+  query: alcoa
+  endpoint: https://crates.io/api/v1/crates?q=alcoa
+  status: 200
+  first_party_hits: 0
+- registry: nuget
+  query: alcoa
+  endpoint: https://azuresearch-usnc.nuget.org/query?q=alcoa
+  status: 200
+  first_party_hits: 0
+- registry: maven-central
+  query: alcoa
+  endpoint: https://search.maven.org/solrsearch/select?q=alcoa
+  status: 200
+  first_party_hits: 0
+- registry: packagist
+  query: alcoa
+  endpoint: https://packagist.org/search.json?q=alcoa
+  status: 200
+  first_party_hits: 0
+- registry: github
+  query: org:alcoa
+  endpoint: https://api.github.com/orgs/alcoa
+  status: 404
+  first_party_hits: 0
+  note: No GitHub organization named "alcoa" exists. No first-party source-code surface found.

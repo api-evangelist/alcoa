@@ -27,7 +27,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alcoa.png
 access: 3rd-Party
 created: '2026-03-21'
-modified: '2026-04-19'
+modified: '2026-08-30'
 position: Consuming
 specificationVersion: '0.23'
 description: >-
@@ -45,22 +45,36 @@ common:
     url: security/alcoa-domain-security.yml
   - type: Website
     url: https://www.alcoa.com
-  - type: Portal
-    url: https://www.alcoa.com/global/en/what-we-do/products-and-solutions
+  - type: Products
+    url: https://www.alcoa.com/global/en/what-we-do
   - type: Blog
-    url: https://www.alcoa.com/global/en/news-and-stories
+    url: https://news.alcoa.com/
   - type: PressReleases
-    url: https://www.alcoa.com/global/en/news-and-stories/press-releases
+    url: https://news.alcoa.com/press-releases/default.aspx
   - type: Contact
-    url: https://www.alcoa.com/global/en/contact-us
+    url: https://www.alcoa.com/global/en/contact
   - type: TermsOfService
-    url: https://www.alcoa.com/global/en/legal/terms-and-conditions
+    url: https://www.alcoa.com/global/en/general/legal-notices
   - type: PrivacyPolicy
-    url: https://www.alcoa.com/global/en/legal/privacy-policy
+    url: https://www.alcoa.com/global/en/general/privacy
   - type: Sustainability
-    url: https://www.alcoa.com/global/en/sustainability
+    url: https://www.alcoa.com/sustainability/en/
   - type: AnnualReport
-    url: https://www.alcoa.com/global/en/investors/financials/annual-reports
+    url: https://investors.alcoa.com/financials/annual-reports-and-proxy-statements/default.aspx
+  - type: InvestorRelations
+    url: https://investors.alcoa.com/home/default.aspx
+  - type: Compliance
+    url: https://www.alcoa.com/global/en/who-we-are/ethics-compliance
+  - type: Conformance
+    url: conformance/alcoa-conformance.yml
+  - type: LLMsTxt
+    url: llms/alcoa-llms.txt
+  - type: Locations
+    url: https://www.alcoa.com/global/en/who-we-are/locations
+  - type: Suppliers
+    url: https://www.alcoa.com/global/en/contact/supplier
+  - type: Careers
+    url: https://www.alcoa.com/careers/en/
   - type: LinkedIn
     url: https://www.linkedin.com/company/alcoa
   - type: Features
@@ -116,3 +130,31 @@ tags:
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Alcoa is a bauxite, alumina and aluminum producer with no developer program: the corporate
+    site 404s /openapi.json, /llms.txt and every /.well-known/ path, developer.alcoa.com and
+    apis.alcoa.com do not resolve, and the one live API host, api.alcoa.com, is an internal
+    Azure APIM gateway that answers 401 "Access denied due to missing subscription key" on its
+    only routed path and 404s every discovery path.
+  evidence:
+  - url: https://api.alcoa.com/echo/resource
+    status: 401
+  - url: https://api.alcoa.com/openapi.json
+    status: 404
+  - url: https://www.alcoa.com/openapi.json
+    status: 404
+  - url: https://www.alcoa.com/llms.txt
+    status: 404
+  - url: https://www.alcoa.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/alcoa
+    status: 404
+  checked: '2026-08-30'

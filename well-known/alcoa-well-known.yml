@@ -1,0 +1,126 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTP probes of every Alcoa host named in apis.yml plus the api.alcoa.com gateway
+note: >-
+  Zero real documents. Alcoa serves no /.well-known/ discovery surface on any host.
+  Two of the five hosts (news.alcoa.com and investors.alcoa.com, both Q4 Inc investor-relations
+  properties) are SOFT-200 CATCH-ALLS: every /.well-known/* path answers HTTP 200 with an
+  11-byte body reading "Invalid key". That is not a document, so no WellKnown or SecurityTxt
+  pointer is emitted for this repo. www.alcoa.com / alcoa.com answer a genuine 404 (a 39,533-byte
+  IIS error page). api.alcoa.com is an Azure API Management gateway and answers a JSON 404.
+hit_count: 0
+hosts:
+- host: https://www.alcoa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://alcoa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://api.alcoa.com
+  note: >-
+    Live Azure API Management gateway (DNS -> api.alcoa.com.trafficmanager.net ->
+    app-prod-noa-itas-apim-appgw-ip.eastus.cloudapp.azure.com). Every discovery path answers a
+    54-byte JSON 404; the one routed path observed, /echo/resource, answers 401
+    "Access denied due to missing subscription key". No anonymous discovery surface.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://news.alcoa.com
+  soft_404_control:
+    probe: /.well-known/api-catalog
+    status: 200
+    bytes: 11
+    body: Invalid key
+    verdict: catch-all — every /.well-known/* path returns the same 11-byte 200; no document served
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not a document, does not count
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not an agent card
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not an agent card
+- host: https://investors.alcoa.com
+  soft_404_control:
+    probe: /.well-known/api-catalog
+    status: 200
+    bytes: 11
+    body: Invalid key
+    verdict: catch-all — every /.well-known/* path returns the same 11-byte 200; no document served
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not a document, does not count
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not an agent card
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: soft-200 catch-all, 11-byte "Invalid key" body — not an agent card

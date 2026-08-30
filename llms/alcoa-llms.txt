@@ -1,0 +1,75 @@
+# Alcoa Corporation
+
+> Alcoa Corporation is a global producer of bauxite, alumina and aluminum, founded in 1888 and
+> headquartered in Pittsburgh, Pennsylvania. It operates mines, refineries and smelters in
+> Australia, Brazil, Canada, Iceland, Norway, Spain and the United States, and supplies
+> primary aluminum, alumina and cast products to the automotive, aerospace, packaging,
+> construction and industrial markets.
+
+## No public API
+
+Alcoa publishes **no developer program, no API documentation and no machine-readable contract**.
+As of 2026-08-30 an agent should not expect a callable Alcoa endpoint. Verified by probe:
+
+- `https://www.alcoa.com/openapi.json` — 404
+- `https://www.alcoa.com/swagger.json` — 404
+- `https://www.alcoa.com/api-docs` — 404
+- `https://www.alcoa.com/llms.txt` — 404
+- `https://www.alcoa.com/.well-known/agent-card.json` — 404
+- `https://www.alcoa.com/.well-known/security.txt` — 404
+- `developer.alcoa.com`, `developers.alcoa.com`, `apis.alcoa.com`, `status.alcoa.com` — no DNS record
+- No GitHub organization `alcoa`; no first-party package on npm, PyPI, RubyGems, crates.io,
+  NuGet, Maven Central or Packagist
+
+`https://api.alcoa.com` does resolve and is a live Microsoft Azure API Management gateway
+(`api.alcoa.com.trafficmanager.net` -> `app-prod-noa-itas-apim-appgw-ip.eastus.cloudapp.azure.com`).
+It answers `401 Access denied due to missing subscription key` on `/echo/resource` and a JSON
+`404 Resource not found` on every other path probed, including all discovery paths. It is an
+internal / partner integration gateway, not a published product API: there is no reference,
+no spec and no way to obtain a subscription key from a public page.
+
+## Company
+
+- [Alcoa Corporation](https://www.alcoa.com): Corporate site
+- [Who We Are](https://www.alcoa.com/global/en/who-we-are): Company overview, history, locations
+- [What We Do](https://www.alcoa.com/global/en/what-we-do): Bauxite, alumina, aluminum and cast products
+- [Locations](https://www.alcoa.com/global/en/who-we-are/locations): Global mines, refineries and smelters
+- [Contact](https://www.alcoa.com/global/en/contact): Customer, supplier and media contact routing
+
+## Products
+
+- [Bauxite](https://www.alcoa.com/global/en/what-we-do/bauxite): Bauxite mining operations
+- [Alumina](https://www.alcoa.com/global/en/what-we-do/alumina): Smelter-grade and non-metallurgical alumina
+- [Aluminum](https://www.alcoa.com/global/en/what-we-do/aluminum): Primary aluminum
+- [Cast Products](https://www.alcoa.com/global/en/what-we-do/aluminum/cast-products): Billet, slab and foundry alloys
+
+## Sustainability and compliance
+
+- [Sustainability](https://www.alcoa.com/sustainability/en/): Policies, reports and spotlights
+- [Ethics and Compliance](https://www.alcoa.com/global/en/who-we-are/ethics-compliance): Code of conduct and published policies
+- [Supplier Standards](https://www.alcoa.com/global/en/who-we-are/ethics-compliance/supplier-standards)
+- [Integrity Line](https://www.alcoa.com/global/en/who-we-are/ethics-compliance/integrity-line): Ethics reporting channel
+- ASI Performance Standard and ASI Chain of Custody certified; ISO 9001 / 14001 / 45001 management systems
+
+## News and investors
+
+- [Newsroom](https://news.alcoa.com/): Corporate news and stories
+- [Press Releases](https://news.alcoa.com/press-releases/default.aspx)
+- [Investor Relations](https://investors.alcoa.com/home/default.aspx)
+- [Annual Reports and Proxy Statements](https://investors.alcoa.com/financials/annual-reports-and-proxy-statements/default.aspx)
+
+## Legal
+
+- [Legal Notices](https://www.alcoa.com/global/en/general/legal-notices)
+- [Privacy](https://www.alcoa.com/global/en/general/privacy)
+- [Cookie Policy](https://www.alcoa.com/global/en/general/cookie-policy)
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/apis.yml): This company's APIs.json profile
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/well-known/alcoa-well-known.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/conformance/alcoa-conformance.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/security/alcoa-domain-security.yml)
+- [Packages](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/packages/alcoa-packages.yml)
+
+<!-- generated: 2026-08-30 | method: generated | source: apis.yml + live probes of alcoa.com hosts -->
