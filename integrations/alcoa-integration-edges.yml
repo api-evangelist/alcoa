@@ -1,0 +1,54 @@
+generated: '2026-10-20'
+method: searched
+source:
+- https://zapier.com/apps/alcoa/integrations
+- https://n8n.io/integrations/alcoa/
+- https://composio.dev/toolkits/alcoa
+- https://monid.ai/tools/alcoa
+checked:
+- https://zapier.com/apps/alcoa/integrations
+- https://www.make.com/en/integrations/alcoa
+- https://n8n.io/integrations/alcoa/
+- https://www.workato.com/integrations/alcoa
+- https://api.alcoa.com
+- https://www.alcoa.com/global/en/developers
+- https://composio.dev/toolkits/alcoa
+- https://monid.ai/tools/alcoa
+- https://pidx.org/current-members/
+- https://reports.opengroup.org/energistics.shtml
+- https://reports.opengroup.org/osdu_forum.shtml
+- https://www.energistics.org/witsml-v131-certified-products
+- https://www.energistics.org/witsml-v1411-certified-products
+- https://www.icmm.com/our-members
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: ICMM (International Council on Mining and Metals)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.icmm.com/en-gb/our-story/our-members/company-members/alcoa
+  category: mining industry council membership
+  contract_reference:
+    register: ICMM company members (icmm.com/our-members)
+    standard: ICMM Mining Principles (performance expectations)
+    spec_file: null
+    role: icmm-member
+    registered_name: Alcoa
+    register_id: https://www.icmm.com/en-gb/our-story/our-members/company-members/alcoa
+    matched_domain: alcoa.com
+    matched_by: domain
+    signal_note: 'participation only: company membership commits to the ICMM Mining Principles; third-party assurance
+      of those commitments is not published as a register and is not read'
+    detected_by: sweep-energy-subsurface.py
+    detected: '2026-10-20'
+  detected_by: sweep-energy-subsurface.py
+  first_seen: '2026-10-20'
+templates: []
+note: 'Checked absence. Alcoa Corporation (aluminium producer) publishes no API, developer portal or software integrations.
+  Probe statuses 2026-10-20: zapier 404, make.com 403, n8n 404 (after 301 to trailing slash), workato 404, api.alcoa.com
+  404, www.alcoa.com/global/en/developers 404. Pre-flight contract discovery found no OpenAPI/AsyncAPI/MCP on any
+  Alcoa host.'
