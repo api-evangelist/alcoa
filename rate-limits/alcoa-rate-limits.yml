@@ -1,0 +1,10 @@
+name: Alcoa rate limits
+generated: '2026-10-20'
+method: none
+source: https://www.alcoa.com/global/en/home/
+limit_count: 0
+limits: []
+note: >-
+  HONEST ZERO. Alcoa publishes no API, so it documents no rate limits and no rate-limit
+  headers. The pre-flight probes (2026-10-20) found no contract or documentation host on
+  alcoa.com hosts.

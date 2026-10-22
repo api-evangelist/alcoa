@@ -1,0 +1,48 @@
+generated: '2026-10-20'
+method: searched
+probe: true
+source:
+- https://www.alcoa.com/global/en/general/privacy
+- https://www.alcoa.com/global/en/general/dsar
+- https://www.alcoa.com/global/en/contact/accessibility-statement
+- https://www.alcoa.com/global/en/general/legal-notices
+- https://www.alcoa.com/global/en/who-we-are/ethics-compliance
+signals:
+  data_subject_request:
+    url: https://www.alcoa.com/global/en/general/dsar
+    section: Data Subject Access Rights Form
+    channel: web form (request types offered include Data Deletion, Data Portability, File a Complaint, Info Request, Object to Processing, Restrict Processing, Review Automated Decision, Update Data); also AlcoaDPO@alcoa.com
+    evidence:
+    - source: https://www.alcoa.com/global/en/general/privacy
+      http_status: 200
+      fetched: '2026-10-20'
+      section: WHAT RIGHTS DO YOU HAVE OVER YOUR PERSONAL DATA
+      quote: Should you have any queries or intention of requesting additional information on how to exercise your rights or to effectively submit such a request, complete the Data Subject Access Rights Form.
+    - source: https://www.alcoa.com/global/en/general/dsar
+      http_status: 200
+      fetched: '2026-10-20'
+      section: Data Subject Access Rights Form
+      quote: Alcoa Corporation values your privacy and believes in your right to make informed decisions about your personal data. If you would like to make a request related to your data, please complete the following form.
+    note: The privacy notice lists access, rectification, erasure, restriction and objection rights "subject to local law" and routes all requests to a published web form; no programmatic (API) channel is documented.
+  data_retention:
+    url: https://www.alcoa.com/global/en/general/privacy
+    section: FOR HOW LONG DO WE STORE YOUR PERSONAL DATA
+    evidence:
+    - source: https://www.alcoa.com/global/en/general/privacy
+      http_status: 200
+      fetched: '2026-10-20'
+      section: FOR HOW LONG DO WE STORE YOUR PERSONAL DATA
+      quote: We will keep your personal data for the length of time set out in our records retention policy.
+    note: Retention is deferred to an internal records retention policy; no period is stated publicly.
+  accessibility_conformance:
+    url: https://www.alcoa.com/global/en/contact/accessibility-statement
+    section: Accessibility Statement
+    standard: []
+    evidence:
+    - source: https://www.alcoa.com/global/en/contact/accessibility-statement
+      http_status: 200
+      fetched: '2026-10-20'
+      section: Accessibility Statement
+      quote: Alcoa is committed to providing a website accessible to everyone, including people with disabilities. We aim to comply with all applicable accessibility standards.
+    note: A general accessibility statement for the website only; it names no conformance standard (no WCAG level, VPAT or EN 301 549) and is an aim, not a claim of conformance.
+note: Alcoa is an aluminum producer with no public developer API; its legal pages are corporate-website notices. The privacy notice also describes international transfers to countries "not regarded as ensuring an adequate level of protection" under appropriate safeguards, which is a transfer statement, not a data-residency offering, so data_residency is not recorded. No subprocessor list, incident-notification SLA, Global Privacy Control statement, SBOM, support lifetime, AI transparency, training-data summary, transparency report, notice-and-action or exit-assistance language was found on the legal notices, privacy, DSAR, accessibility or ethics-and-compliance pages.

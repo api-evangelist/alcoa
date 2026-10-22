@@ -1,0 +1,17 @@
+name: Alcoa pricing
+generated: '2026-10-20'
+method: none
+source: https://www.alcoa.com/global/en/home/
+audience: unclear
+pricing_basis: none
+published: false
+delivery:
+  model: unclear
+plan_count: 0
+plans: []
+note: >-
+  HONEST ZERO. Alcoa Corporation makes bauxite, alumina and aluminum. It has no developer
+  program, no API and no published API or platform pricing. The pre-flight contract discovery
+  (2026-10-20) found no OpenAPI, AsyncAPI or GraphQL on www/news/investors/fr-ca.alcoa.com or
+  api.alcoa.com, and none of those hosts linked a docs host. Commodity metal prices are set
+  commercially and are not an API plan.

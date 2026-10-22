@@ -1,0 +1,20 @@
+name: Alcoa MCP server
+type: MCPServer
+generated: '2026-10-20'
+method: none
+source:
+- https://www.alcoa.com/.well-known/mcp.json (HTTP 404, probed 2026-10-20)
+- https://www.alcoa.com/mcp (HTTP 404, probed 2026-10-20)
+- https://api.alcoa.com/mcp (HTTP 404 JSON {"statusCode":404,"message":"Resource not found"}, GET and MCP initialize POST, probed 2026-10-20)
+- https://api.alcoa.com/.well-known/mcp.json (HTTP 404, probed 2026-10-20)
+- preflight contract_discovery on api.alcoa.com, www.alcoa.com, news.alcoa.com, investors.alcoa.com, fr-ca.alcoa.com found no contracts; mcp_tool_table l3=no-mcp-docs-found
+- web search 2026-10-20 found no Alcoa MCP server or developer API
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+note: >-
+  Alcoa publishes no MCP server and no public API contract (no OpenAPI in this repo),
+  so no candidate tool list can be derived. api.alcoa.com answers every probed path with a
+  JSON 404 (an API gateway with no public routes). Recorded as an honest absence.

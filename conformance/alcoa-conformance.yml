@@ -10,7 +10,8 @@ note: >-
   Both halves are recorded here so the absence on the technical side is explicit rather than
   merely missing. No domain_standard_conformance is asserted: that check reads a machine-readable
   CONTRACT declaring a standard, and Alcoa publishes no contract.
-industry_standards:
+standards:
+# industry / management-system standards (certified)
 - id: asi-performance-standard
   name: ASI Performance Standard (Aluminium Stewardship Initiative)
   conforms: true
@@ -47,7 +48,7 @@ industry_standards:
   evidence: Alcoa Quality Policy commits to certified quality management systems across operations.
   source: https://www.alcoa.com/global/en/who-we-are/ethics-compliance/quality-policy
   http_status: 200
-api_standards:
+# API and protocol standards (none conformed)
 - id: openapi
   conforms: false
   evidence: No OpenAPI/Swagger document found on any Alcoa host — see x-coverage in apis.yml.

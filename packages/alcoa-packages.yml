@@ -1,5 +1,5 @@
 generated: '2026-08-30'
-method: searched
+method: none
 source: >-
   Registry sweep of npm, PyPI, RubyGems, crates.io, NuGet, Maven Central and Packagist for
   first-party Alcoa Corporation client libraries, 2026-08-30.

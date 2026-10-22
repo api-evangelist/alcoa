@@ -1,0 +1,124 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 5
+  other_domain: 0
+  platform: 4
+  roles:
+  - api
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.alcoa.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: alcoa.com
+  role: api
+  relation: own
+- host: fr-ca.alcoa.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: alcoa.com
+  role: other
+  relation: own
+- host: investors.alcoa.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - AnnualReport
+  - InvestorRelations
+  - Leadership
+  serves: []
+  registrable_domain: alcoa.com
+  role: other
+  relation: own
+- host: news.alcoa.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  - Newsroom
+  - PressReleases
+  serves: []
+  registrable_domain: alcoa.com
+  role: marketing
+  relation: own
+- host: www.alcoa.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Products
+  - Contact
+  - TermsOfService
+  - PrivacyPolicy
+  - Sustainability
+  - Compliance
+  - Locations
+  - Suppliers
+  - Careers
+  - History
+  - CookiePolicy
+  - Accessibility
+  serves: []
+  registrable_domain: alcoa.com
+  role: website
+  relation: own
+- host: www.facebook.com
+  found_by:
+  - pointer
+  types:
+  - Facebook
+  serves: []
+  registrable_domain: facebook.com
+  role: other
+  relation: platform
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - pointer
+  types:
+  - Twitter
+  serves: []
+  registrable_domain: x.com
+  role: other
+  relation: platform
