@@ -1,4 +1,4 @@
-# Alcoa (alcoa)
+# Alcoa
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,67 +66,93 @@
 
 Alcoa Corporation is a global industry leader in bauxite, alumina, and aluminum production. Founded in 1888, Alcoa operates mines, refineries, and smelters across Australia, Brazil, Canada, Iceland, Norway, Saudi Arabia, and the United States. The company is a Fortune 500 member and one of the world's largest aluminum producers, supplying lightweight, high-strength materials to automotive, aerospace, packaging, construction, and industrial markets. Alcoa is committed to sustainability through low-carbon aluminum production, responsible bauxite mining, and advancing aluminum recycling.
 
-**URL:** [https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/alcoa/refs/heads/main/apis.yml)
+**Areas:** Aluminum · Mining · Manufacturing · Metals · Sustainability · Fortune 500 · Materials
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Alcoa on APIs.io
 
-## Tags:
+Everything profiled for Alcoa is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alcoa/](https://apis.io/providers/alcoa/)** — or go straight to one of the APIs or properties below.
 
- - Aluminum, Mining, Manufacturing, Metals, Sustainability, Fortune 500, Materials
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alcoa Domain Security](https://apis.io/security/alcoa/alcoa-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Alcoa Plans Pricing](https://apis.io/plans/alcoa/alcoa-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Alcoa Rate Limits](https://apis.io/rate-limits/alcoa/alcoa-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.alcoa.com)
-- [Portal](https://www.alcoa.com/global/en/what-we-do/products-and-solutions)
-- [Blog](https://www.alcoa.com/global/en/news-and-stories)
-- [PressReleases](https://www.alcoa.com/global/en/news-and-stories/press-releases)
-- [Contact](https://www.alcoa.com/global/en/contact-us)
-- [TermsOfService](https://www.alcoa.com/global/en/legal/terms-and-conditions)
-- [PrivacyPolicy](https://www.alcoa.com/global/en/legal/privacy-policy)
-- [Sustainability](https://www.alcoa.com/global/en/sustainability)
-- [AnnualReport](https://www.alcoa.com/global/en/investors/financials/annual-reports)
-- [LinkedIn](https://www.linkedin.com/company/alcoa)
+- [Blog](https://news.alcoa.com/alcoa-stories/default.aspx)
+- [Compliance](https://www.alcoa.com/global/en/who-we-are/ethics-compliance)
+- [Terms of service](https://www.alcoa.com/global/en/general/legal-notices)
+- [Privacy policy](https://www.alcoa.com/global/en/general/privacy)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Bauxite Mining | World-scale bauxite mining operations in Australia and Brazil supplying the global alumina supply chain. |
-| Alumina Refining | Large-scale alumina (aluminum oxide) refining operations that convert bauxite to the precursor for aluminum smelting. |
-| Aluminum Smelting | Primary aluminum production using proprietary smelting technology, including low-carbon ELYSIS process development. |
-| ELYSIS Zero-Carbon Technology | Joint venture with Rio Tinto developing ELYSIS technology for carbon-free aluminum smelting using inert anodes. |
-| Aluminum Recycling | Recycled aluminum products and closed-loop supply chain programs with automotive and packaging customers. |
-| Sustainability Reporting | Annual sustainability reports tracking greenhouse gas emissions, water use, land rehabilitation, and biodiversity commitments. |
-| Cast Products | Engineered aluminum billet, slab, and foundry alloy products for downstream rolling and extrusion customers. |
+**Kin Score 15.5** — emerging · rubric 0.24.0 · scored 2026-10-20
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 58.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 28.9 |
 
-| Name | Description |
-|------|-------------|
-| Automotive Lightweighting | High-strength aluminum sheet and castings for vehicle body structures, hoods, doors, and structural components reducing vehicle weight. |
-| Aerospace Structures | Aerospace-grade aluminum alloys for airframe structures, fuselage panels, and wing components with stringent certification requirements. |
-| Packaging and Beverage Cans | Aluminum sheet for the packaging industry including beverage cans, foil, and food container stock. |
-| Building and Construction | Architectural aluminum extrusions and sheet for windows, curtain walls, roofing, and structural construction applications. |
-| Energy Transition Infrastructure | Aluminum for solar panel frames, wind turbine components, and electric vehicle battery enclosures supporting the energy transition. |
-| Industrial Applications | High-purity alumina and specialty aluminum products for industrial processes, refractories, and abrasive applications. |
+**Agent readiness 5.6** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Automotive OEMs | Supply agreements with major automotive manufacturers for aluminum sheet, castings, and engineered components. |
-| Aerospace Manufacturers | Long-term supply relationships with commercial and defense aerospace prime contractors and tier-1 suppliers. |
-| Packaging Companies | Aluminum sheet supply to beverage can manufacturers and food packaging converters globally. |
-| Construction and Architecture | Aluminum billet supply to extrusion companies serving the building and construction market. |
-| Rio Tinto - ELYSIS JV | Joint venture with Rio Tinto to commercialize carbon-free aluminum smelting technology via the ELYSIS partnership. |
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alcoa/](https://apis.io/providers/alcoa/).
 
-**FN:** API Evangelist
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alcoa: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alcoa/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
